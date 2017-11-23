@@ -1,0 +1,9 @@
+{
+  "extends": "vue",
+  plugins: [
+    'html'
+  ],
+  "rules": {
+    "eqeqeq": 0
+  }
+}

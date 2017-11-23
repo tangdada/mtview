@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1511407748907" clover="3.2.0">
+  <project timestamp="1511407748907" name="All files">
+    <metrics statements="15" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="6" coveredmethods="0" elements="37" coveredelements="0" complexity="0" loc="15" ncloc="15" packages="2" files="2" classes="2">
+      <package name="src">
+        <metrics statements="7" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <file name="App.vue" path="/Users/tangsir/Documents/code/mtview/src/App.vue">
+          <metrics statements="7" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="21" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="22" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components">
+        <metrics statements="8" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <file name="HelloWorld.vue" path="/Users/tangsir/Documents/code/mtview/src/components/HelloWorld.vue">
+          <metrics statements="8" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="4" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="30" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+          <line num="39" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="42" count="0" type="cond" truecount="0" falsecount="4"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

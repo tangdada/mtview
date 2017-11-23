@@ -1,0 +1,56 @@
+.mt-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  .mt-select_list {
+    width: 100%;
+    position: absolute;
+    max-height: 250px;
+    overflow-y: auto;
+    margin-top: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12), 0 0 6px rgba(0,0,0,.04);
+    background-color: #fff;
+    z-index: 9999;
+  }
+
+  .mt-select_item {
+    padding: 7px 10px;
+    line-height: 20px;
+    &:hover {
+      background-color: #f3f3f3;
+      cursor: pointer;
+    }
+    &.on {
+      background-color: #20a0ff;
+      color:#fff;
+    }
+  }
+
+  .mt-select_input {
+    width: 100%;
+    padding: 3px 10px;
+    padding-right: 35px;
+    border: 1px solid #dddee1;
+    line-height: 1;
+    height: 32px;
+    border-radius: 4px;
+    width: 100%;
+    &:read-only {
+      cursor: not-allowed;
+    }
+    &:disabled {
+      cursor: not-allowed;
+      background-color: #eef1f6;
+    }
+  }
+
+  .el-input__icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    &:hover {
+      color: #8795ab;
+    }
+  }
+}
