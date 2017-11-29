@@ -1,9 +1,13 @@
 {
-  "name": "mt-view",
+  "name": "mtview",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "mt",
-  "private": true,
+  "main": "dist/iview.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -11,7 +15,11 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "build": "node build/build.js"
+
+    "build": "npm run build:js && npm run build:css && npm run dist:dev",
+    "build:js": "node build/build.js",
+    "build:css": "gulp --gulpfile build/build-style.js",
+    "dist:dev": "webpack --config build/webpack.dist.dev.conf.js"
   },
   "dependencies": {
     "vue": "^2.5.2",
@@ -50,6 +58,11 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^21.2.0",
     "jest-serializer-vue": "^0.3.0",
