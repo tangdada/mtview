@@ -1,15 +1,15 @@
 <template>
   <div id="app">
     <div class="compo-nav">
-      <div class="compo-nav-l">
-        <img src="../src/assets/logo.png">
-        <div><router-link to="/select">Select</router-link></div>
-      </div>
-      <div class="compo-nav-r">
-        <router-view />
-      </div>
+    <div class="compo-nav-l">
+      <img src="../src/assets/logo.png">
+      <div><router-link to="/select">Select</router-link></div>
+    </div>
+    <div class="compo-nav-r">
+      <router-view />
     </div>
   </div>
+
 </template>
 
 <script>
@@ -21,14 +21,6 @@ export default {
     @import "../src/styles/index.less";
 </style>
 <style lang="less">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  // margin-top: 60px;
-}
 .compo-nav {
   .compo-nav-l {
     float: left;
@@ -45,5 +37,13 @@ export default {
     float: right;
     width: 70%;
   }
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 </style>

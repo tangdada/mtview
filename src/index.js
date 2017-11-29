@@ -1,8 +1,8 @@
-import Selcect from './components/select'
+import Select from './components/select'
 
 const mtview = {
   version: process.env.VERSION, // eslint-disable-line no-undef
-  Selcect
+  'mt-select': Select
 }
 
 const install = function (Vue, opts = {}) {
@@ -16,12 +16,8 @@ const install = function (Vue, opts = {}) {
 
 const API = {
   version: process.env.VERSION, // eslint-disable-line no-undef
-  Selcect
-}
-
-// auto install
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue)
+  install,
+  Select
 }
 
 module.exports.default = module.exports = API   // eslint-disable-line no-undef

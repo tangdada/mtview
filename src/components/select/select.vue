@@ -42,17 +42,11 @@ export default {
   mounted () {
     document.addEventListener('click', this.domHandleClick)
     this.readonly = !(this.filters.length > 0)
-    // this.setOptions(this.options)
   },
 
   props: {
     value: [String, Number],
-    options: {
-      type: Array,
-      default: function () {
-        return []
-      }
-    },
+    options: Array,
     filters: {
       type: Array,
       default: function () {
