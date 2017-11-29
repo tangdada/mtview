@@ -5,9 +5,11 @@
         <img src="../src/assets/logo.png">
         <div><router-link to="/select">Select</router-link></div>
       </div>
+
       <div class="compo-nav-r">
         <router-view />
       </div>
+      
     </div>
   </div>
 

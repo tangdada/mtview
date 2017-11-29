@@ -1,9 +1,18 @@
 {
   "name": "mtview",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "mt",
-  "main": "dist/iview.js",
+  "title": "mtView",
+  "description": "A fast and smooth UI components library of Vue.js 2.0",
+  "keywords": [
+    "mtview",
+    "vue",
+    "vue.js",
+    "component",
+    "components",
+    "ui",
+    "framework"
+  ],
+  "main": "dist/mtview.js",
   "files": [
     "dist",
     "src"
@@ -20,6 +29,11 @@
     "build:js": "node build/build.js",
     "build:css": "gulp --gulpfile build/build-style.js",
     "dist:dev": "webpack --config build/webpack.dist.dev.conf.js"
+  },
+  "author": "tangdada",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mt-fe-team/mtview"
   },
   "dependencies": {
     "vue": "^2.5.2",
