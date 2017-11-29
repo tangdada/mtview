@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <div class="compo-nav">
-    <div class="compo-nav-l">
-      <img src="../src/assets/logo.png">
-      <div><router-link to="/select">Select</router-link></div>
-    </div>
-    <div class="compo-nav-r">
-      <router-view />
+      <div class="compo-nav-l">
+        <img src="../src/assets/logo.png">
+        <div><router-link to="/select">Select</router-link></div>
+      </div>
+      <div class="compo-nav-r">
+        <router-view />
+      </div>
     </div>
   </div>
 

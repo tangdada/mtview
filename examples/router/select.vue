@@ -1,13 +1,14 @@
 <template>
   <div style="width: 300px;">
-    234
-    <mt-select> </mt-select>
+    <mt-select
+    v-model="select1"
+    :options="list"></mt-select>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'mtSelect',
+  name: 'mtSelectDemo',
   data () {
     return {
       select1: '',

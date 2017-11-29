@@ -42,6 +42,7 @@ export default {
   mounted () {
     document.addEventListener('click', this.domHandleClick)
     this.readonly = !(this.filters.length > 0)
+    this.setOptions(this.options)
   },
 
   props: {
